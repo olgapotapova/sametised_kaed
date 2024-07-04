@@ -18,6 +18,7 @@
     <meta property="og:image" content="https://olgapotapova.github.io/sametised/images/Logo.png" />
     
     <title class="lng-sametised">Sametised kaed</title>
+    <link rel="manifest" href="/manifest" />
     <!-- <link rel="alternate" hreflang="ru" href="https://olgapotapova.github.io/sametised/index.html#ru>
     <link rel="alternate" hreflang="en" href="https://olgapotapova.github.io/sametised/index.html#ee"> -->
     <meta id="meta-description" name="description" content="">
@@ -32,9 +33,8 @@
             }
         });
     </script>
-    <!-- <link type="Image/x-icon" href="images/favicon.ico" rel="icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link type="Image/x-icon" href="favicon.ico" rel="icon">
+    <!-- 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,27 +69,30 @@
                 <div class="top-panel">
                     <div class="message">  
                         <div>
-                            <a href="">Отзывы</a>
+                            <a class="lng-feedback" href="#feedback">Tagasiside</a>
                         </div>  
                         <div>
-                            <a href="">Галерея</a>
+                            <a class="lng-gallerii" href="#gallerii">Galerii</a>
                         </div> 
                         <div>              
                             <ul>
-                                <li><a href="#classic-massage">Klassikaline massaaž</a></li>
-                                <li><a href="#aroma-massage">Aroomimassaaž</a></li>
-                                <li><a href="#anti-cellulite-massage">Tselluliidivastane massaaž</a></li>
-                                <li><a href="#">Четыре</a></li>
-                                <li><a href="#">Пять</a></li>
+                                <li><a class="lng-klassikaline" href="#classic-massage">Klassikaline massaaž</a></li>
+                                <li><a class="lng-aroma" href="#aroma-massage">Aroomimassaaž</a></li>
+                                <li><a class="lng-anti-cellulite" href="#anti-cellulite-massage">Tselluliidivastane massaaž</a></li>
+                                <li><a class="lng-cupping" href="#cupping-massage">Kupumassaaź</a></li>
+                                <li><a class="lng-thai" href="#thai-massage">Tai massaaž</a></li>
+                                <li><a class="lng-lymphatic" href="#lymphatic-massage">Lümfimassaaž</a></li>
                             </ul> 
                         </div>
                         <div>
                             <ul>
-                                <li><a href="#">Klassikaline massaaž</a></li>
-                                <li><a href="#">Aroomimassaaž</a></li>
-                                <li><a href="#">Tselluliidivastane massaaž</a></li>
-                                <li><a href="#">Четыре</a></li>
-                                <li><a href="#">Пять</a></li>
+                                <li><a class="lng-children" href="#children-massage">Laste massaaž</a></li>
+                                <li><a class="lng-lava" href="#lava-massage">Laavakivimassaaž</a></li>
+                                <li><a class="lng-classic-facial" href="#classic-facial-massage">Klassikaline näomassaaž</a></li>
+                                <li><a class="lng-shiatsu" href="#shiatsu-massage">Shiatsu massaaž</a></li>
+                                <!-- <li><a class="lng-sports" href="#sports-massage">Spordimassaaž</a></li> -->
+                                <li><a class="lng-segmental" href="#segmental-massage">Segmentaalne massaaž</a></li>
+                                <li><a class="lng-pleasure" href="#pleasure-massage">Keha nauding</a></li>
                             </ul> 
                         </div>  
                     </div>
@@ -100,10 +103,10 @@
             <div class="box1">
                 <div class="mere"></div>
                 <!-- <img class="mere-animation" src="images/Mere.png" alt="Mere"> -->
-                <div class="text-box">
-                    <div class="h1-box">
-                    <h1 class="lng-h1">MASSAAŽ</h1><span class="lng-tallinn">TALLINN</span>
-                </div>
+                    <div class="text-box">
+                        <div class="h1-box">
+                        <h1 class="lng-h1">MASSAAŽ</h1><span class="lng-tallinn">TALLINN</span>
+                    </div>
                     <h3 class="lng-h3">Massaaž algab alles pärast vestlust kliendiga</h3>
                     <button class="white-button"><a class="lng-broneeri" href="https://www.messenger.com/t/svetlana.lukiyanova"
                             target="_blank">Broneeri massaaž</a></button>
@@ -112,12 +115,10 @@
             <!-- --------------------------------- -->
             <div class="main-box">
             <div class="slider-box-1">
-                <h2>MEIE TEENUSED JA HINNAD</h2>
-                <section>
-                    
+                <h2 class="lng-services-prices">MEIE TEENUSED JA HINNAD</h2>
+                <section>                  
                     <ul class="horizontal-media-scroller-1">
-                        <li>
-
+                        <li>                        
                             <a class="card-href" id="classic-massage" href="#">
                                 <figure>
                                     <picture class="picture-box-1">
@@ -125,7 +126,7 @@
                                             src="images/Сlassic-massage.png">
                                     </picture>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-klassikaline">Klassikaline massaaž</figcaption>
+                                        <figcaption class="lng-klassikaline-caption">Klassikaline massaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                         src="images/Сlassic-massage.png">
                                         <p class="lng-klassikaline-text">Klassikaline massaaž on tõhus viis pingete maandamiseks ja vereringe
@@ -135,7 +136,7 @@
                                         <p class="contraindication lng-klassikaline-contraindication">Ägedad nakkushaigused, tromboflebiit, palavik.</p>
                                         <p class="price  lng-klassikaline-price">60 min - 35€ &nbsp; &nbsp; 90 min - 50€</p>
                                         <object data="" type="">
-                                            <button class="card-button">
+                                            <button class="card-button lng-choose-massage">
                                                 <a href="https://www.messenger.com/t/svetlana.lukiyanova"
                                                 target="_blank">Vali massaaž</a>
                                             </button>
@@ -143,16 +144,16 @@
                                     </div>
                                 </figure>
                             </a>
-                            <a href="#aroma-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#aroma-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
                        
                      
                         <li>
-                            <a href="#classic-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#classic-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a href="#" class="card-href" id="aroma-massage">
                                 <figure>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-aroma">Aroomimassaaž</figcaption>
+                                        <figcaption class="lng-aroma-caption">Aroomimassaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy" src="images/Aroma-massage.png">
                                         <p class="lng-aroma-text">Aroomimassaaž ühendab massaažitehnikad eeterlike õlide kasutamisega. 
                                             See ainulaadne kombinatsioon aitab teil lõõgastuda, leevendada stressi ja parandada teie üldist heaolu.</p>
@@ -171,18 +172,18 @@
                                     </picture>
                                 </figure>
                             </a>
-                            <a href="#anti-cellulite-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#anti-cellulite-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                            <a href="#aroma-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#aroma-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="anti-cellulite-massage">
                                 <figure>
                                     <picture class="picture-box-1">
                                         <img class="img-scroller-1" alt="A placeholder image" loading="lazy" src="images/Anti-cellulite-massage.png">
                                     </picture>
                                     <div class="figcaption-box">
-                                        <figcaption>Tselluliidivastane massaaž</figcaption>
+                                        <figcaption class="lng-anti-cellulite-caption">Tselluliidivastane massaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy" src="images/Anti-cellulite-massage.png">
                                         <p class="">Tselluliidivastane massaaž on suunatud nahaaluste rasvade ladestumise vastu võitlemisele. 
                                             See stimuleerib vereringet, parandab lümfiringet ja pinguldab nahka.</p>
@@ -198,20 +199,20 @@
                                     </div>
                                 </figure>
                             </a>
-                            <a href="#сupping-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#cupping-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
                         <li>
-                            <a href="#anti-cellulite-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
-                            <a class="card-href" href="#" id="сupping-massage">
+                            <a href="#anti-cellulite-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
+                            <a class="card-href" href="#" id="cupping-massage">
                                 <figure>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-сupping">Kupumassaaź</figcaption>
+                                        <figcaption class="lng-сupping-caption">Kupumassaaź</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                         src="images/Cupping.png">
-                                        <p class="lng-сupping-text">Kupumassaaž on tehnika, mis kasutab klaasist või silikoonkuppe, et tekitada nahale vaakum. 
+                                        <p class="lng-cupping-text">Kupumassaaž on tehnika, mis kasutab klaasist või silikoonkuppe, et tekitada nahale vaakum. 
                                             See aitab parandada vereringet, hajutada kapillaare ja vähendada tselluliidi teket.</p>
                                         <h6 class="lng-contraindication-heder">Vastunäidustused:</h6>
-                                        <p class="contraindication lng-сupping-contraindication">Kahjustatud nahk, veenilaiendid, rasedus.</p>
+                                        <p class="contraindication lng-cupping-contraindication">Kahjustatud nahk, veenilaiendid, rasedus.</p>
                                         <p class="price">60 min - 35€  &nbsp; &nbsp; 90 min - 50€</p>
                                         <object data="" type="">
                                             <button class="card-button">
@@ -226,11 +227,11 @@
                                     </picture>
                                 </figure>
                             </a>
-                            <a href="#thai-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#thai-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                            <a href="#сupping-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#cupping-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="thai-massage">
                                 <figure>
                                     <picture class="picture-box-1">
@@ -238,7 +239,7 @@
                                             src="images/Thai.png">
                                     </picture>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-thai">Tai massaaž</figcaption>
+                                        <figcaption class="lng-thai-caption">Tai massaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                             src="images/Thai.png">
                                         <p class="lng-thai-text">Tai massaaž оn idamaine tehnika, mis sisaldab endast erinevaid võted, sellised nagu venitamine, väänamine. See soodustab lihaste lõdvestamist, paremat painduvust ja energiatasakaalu.</p>
@@ -254,15 +255,15 @@
                                     </div>
                                 </figure>
                             </a>
-                            <a href="#lymphatic-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#lymphatic-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                            <a href="#thai-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#thai-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="lymphatic-massage">
                                 <figure>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-lymphatic">Lümfimassaaž</figcaption>
+                                        <figcaption class="lng-lymphatic-caption">Lümfimassaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                             src="images/Lymphatic.png">
                                         <p class="lng-lymphatic-text">Lümfimassaaž aitab parandada lümfiringet, eemaldab toksiine ja parandab naha seisundit. 
@@ -283,11 +284,11 @@
                                     </picture>
                                 </figure>
                             </a>
-                            <a href="#children-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#children-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                            <a href="#lymphatic-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#lymphatic-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="children-massage">
                                 <figure>
                                     <picture class="picture-box-1">
@@ -295,7 +296,7 @@
                                             src="images/Children.png">
                                     </picture>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-children">Laste massaaž</figcaption>
+                                        <figcaption class="lng-children-caption">Laste massaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                         src="images/Children.png">
                                         <p class="lng-children-text">Laste massaaž alates 12. eluaastast sisaldab võtteid, mis on kohandatud lapse vanusele. 
@@ -312,15 +313,15 @@
                                     </div>
                                 </figure>
                             </a>
-                            <a href="#lava-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#lava-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                            <a href="#children-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#children-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="lava-massage">
                                 <figure>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-lava">Laavakivimassaaž</figcaption>
+                                        <figcaption class="lng-lava-caption">Laavakivimassaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                         src="images/Lava.png">
                                         <p class="lng-lava-text">Laavakivimassaaž ühendab siledate kuumutatud kivide mõju traditsiooniliste massaažitehnikatega. 
@@ -341,11 +342,11 @@
                                     </picture>
                                 </figure>
                             </a>
-                            <a href="#classic-facial-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#classic-facial-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                            <a href="#lava-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#lava-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="classic-facial-massage">
                                 <figure>
                                     <picture class="picture-box-1">
@@ -353,7 +354,7 @@
                                             src="images/Classic-facial.png">
                                     </picture>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-classic-facial">Klassikaline näomassaaž</figcaption>
+                                        <figcaption class="lng-classic-facial-caption">Klassikaline näomassaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                         src="images/Classic-facial.png">
                                         <p class="lng-classic-facial-text">Klassikaline näomassaaž aitab parandada jumet, toniseerib nahka ja soodustab lõõgastumist. See stimuleerib vereringet ja vähendab turset.
@@ -370,15 +371,15 @@
                                     </div>
                                 </figure>
                             </a>
-                            <a href="#shiatsu-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#shiatsu-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                            <a href="#classic-facial-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#classic-facial-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="shiatsu-massage">
                                 <figure> 
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-shiatsu">Shiatsu massaaž</figcaption>
+                                        <figcaption class="lng-shiatsu-caption">Shiatsu massaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy" src="images/Shiatsu.png">
                                         <p class="lng-shiatsu-text">Shiatsu massaaž on Jaapani massaažitehnika, mis põhineb survel teatud punktidele. 
                                             See aitab taastada energia tasakaalu ja parandada üldist heaolu.</p>
@@ -397,11 +398,11 @@
                                     </picture> 
                                 </figure>
                             </a>
-                            <a href="#segmental-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#segmental-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <!-- <li>
-                            <a href="#shiatsu-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#shiatsu-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="sports-massage">
                                 <figure>
                                     <picture class="picture-box-1">
@@ -409,7 +410,7 @@
                                             src="images/Sport.png">
                                     </picture>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-sports">Spordimassaaž</figcaption>
+                                        <figcaption class="lng-sports-caption">Spordimassaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy"
                                         src="images/Sport.png">
                                         <p class="lng-sports-text">Spordimassaaži eesmärk on parandada jõudlust ja taastumist pärast füüsilist aktiivsust. 
@@ -427,18 +428,18 @@
                                     </div>
                                 </figure>
                             </a>
-                            <a href="#segmental-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#segmental-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li> -->
 
                         <li>
-                            <a href="#shiatsu-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                            <a href="#shiatsu-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                             <a class="card-href" href="#" id="segmental-massage">
                                 <figure>
                                     <picture class="picture-box-1">
                                         <img class="img-scroller-1" alt="A placeholder image." loading="lazy" src="images/Segmental.png">
                                     </picture>
                                     <div class="figcaption-box">
-                                        <figcaption class="lng-segmental">Segmentaalne massaaž</figcaption>
+                                        <figcaption class="lng-segmental-caption">Segmentaalne massaaž</figcaption>
                                         <img class="img-figcaption-box" alt="A placeholder image" loading="lazy" src="images/Segmental.png">
                                         <p class="lng-segmental-text">Segmentmassaaž on suunatud siseorganite töö parandamisele, mõjutades vastavaid nahalõike ja lihaseid. 
                                             See aitab parandada üldist tervist ja taastada keha tasakaalu.</p>
@@ -454,15 +455,15 @@
                                     </div>
                                 </figure>
                             </a>
-                            <a href="#pleasure-massage"><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
+                            <a href="#pleasure-massage"><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
                         </li>
 
                         <li>
-                        <a href="#segmental-massage"><img class="arrow-back" src="images/Polygon.png" alt="Arrow back."></a>
+                        <a href="#segmental-massage"><img class="arrow-back" src="images/Polygon.svg" alt="Arrow back."></a>
                         <a class="card-href" href="#" id="pleasure-massage">
                             <figure>
                                 <div class="figcaption-box">
-                                    <figcaption class="lng-pleasure">Keha nauding</figcaption>
+                                    <figcaption class="lng-pleasure-caption">Keha nauding</figcaption>
                                     <img class="img-figcaption-box" alt="A placeholder image" loading="lazy" src="images/Pleasure.png">
                                     <p class="lng-pleasure-text">Keha nauding sobib nendele, kes tahaks lõdvestada keha või teha kingituse oma õele, 
                                         tütrele, emale. Sisaldab: 1 tund aroomimassaaž + klassikaline näo massaaž</p>
@@ -478,117 +479,126 @@
                                 </div>
                                 <picture class="picture-box-1">
                                     <img class="img-scroller-1-pleasure" alt="A placeholder image" loading="lazy" src="images/Pleasure.png">
+                                    <img class="img-scroller-1-pleasure-2" alt="A placeholder image" loading="lazy" src="images/Aroma-massage.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        </li>
+                    </ul>
+                
+                </section>
+            </a>
+            </div>
+            <div class="mobile-pattern-top"></div>
+            <!-- -------------------------- -->
+            <div id="gallerii" class="slider-box-2">
+                <h2 class="lng-gallerii-caption">Galerii</h2>
+                <section>
+        
+                <ul class="horizontal-media-scroller-2">
+                    <li>
+                        <a class="picture-href" href="#" id="foto-1">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-1.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        <a href="#foto-2"><img class="arrow-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                    </li>
+                    
+                    <li>
+                        <a href="#foto-1"><img class="arrow-back-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                        <a class="picture-href" href="#" id="foto-2">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-2.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        <a href="#foto-3"><img class="arrow-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                    </li>
+
+                    <li>
+                        <a href="#foto-2"><img class="arrow-back-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                        <a class="picture-href" href="#" id="foto-3">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-3.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        <a href="#foto-4"><img class="arrow-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                    </li>
+
+                    <li>
+                        <a href="#foto-3"><img class="arrow-back-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                        <a class="picture-href" href="#" id="foto-4">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-3.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        <a href="#foto-5"><img class="arrow-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                    </li>
+
+                    <li>
+                        <a href="#foto-4"><img class="arrow-back-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                        <a class="picture-href" href="#" id="foto-5">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-3.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        <a href="#foto-6"><img class="arrow-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                    </li>
+
+                    <li>
+                        <a href="#foto-5"><img class="arrow-back-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                        <a class="picture-href" href="#" id="foto-6">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-3.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        <a href="#foto-7"><img class="arrow-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                    </li>
+
+                    <li>
+                        <a href="#foto-6"><img class="arrow-back-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                        <a class="picture-href" href="#" id="foto-7">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-3.png">
+                                </picture>
+                            </figure>
+                        </a>
+                        <a href="#foto-8"><img class="arrow-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                    </li>
+
+                    <li>
+                        <a href="#foto-7"><img class="arrow-back-2" src="images/Polygon.svg" alt="Arrow forward."></a>
+                        <a class="picture-href" href="#" id="foto-8">
+                            <figure>
+                                <picture>
+                                    <img alt="A placeholder image" loading="lazy" src="images/Foto-3.png">
                                 </picture>
                             </figure>
                         </a>
                     </li>
                 </section>
-            </div>
-            <!-- -------------------------- -->
-            <div class="slider-box-2">
-                <h2>Galerii</h2>
-                <section>
-        
-                <ul class="horizontal-media-scroller-2">
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="images/Foto1.png">
-                                </picture>
-                            </figure>
-                        </a>
-                        <a href=""><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="arrow-back" src="images/Polygon.png" alt="Arrow forward."></a>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="images/Foto2.png">
-                                </picture>
-                            </figure>
-                        </a>
-                        <a href=""><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="arrow-back" src="images/Polygon.png" alt="Arrow forward."></a>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="images/Foto3.png">
-                                </picture>
-                            </figure>
-                        </a>
-                        <a href=""><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="arrow-back" src="images/Polygon.png" alt="Arrow forward."></a>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="https://picsum.photos/500/500?4">
-                                </picture>
-                            </figure>
-                        </a>
-                        <a href=""><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="arrow-back" src="images/Polygon.png" alt="Arrow forward."></a>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="https://picsum.photos/500/500?5">
-                                </picture>
-                            </figure>
-                        </a>
-                        <a href=""><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="arrow-back" src="images/Polygon.png" alt="Arrow forward."></a>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="https://picsum.photos/500/500?6">
-                                </picture>
-                            </figure>
-                        </a>
-                        <a href=""><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="arrow-back" src="images/Polygon.png" alt="Arrow forward."></a>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="https://picsum.photos/500/500?5">
-                                </picture>
-                            </figure>
-                        </a>
-                        <a href=""><img class="arrow" src="images/Polygon.png" alt="Arrow forward."></a>
-                    </li>
-
-                    <li>
-                        <a href=""><img class="arrow-back" src="images/Polygon.png" alt="Arrow forward."></a>
-                        <a href="#">
-                            <figure>
-                                <picture>
-                                    <img alt="A placeholder image" loading="lazy" src="https://picsum.photos/500/500?6">
-                                </picture>
-                            </figure>
-                        </a>
-                    </li>
-
-                    </section>
+                <div class="yellow-button-box">
+                    <button class="yellow-button"><a class="lng-sign" href="https://www.messenger.com/t/svetlana.lukiyanova"
+                        target="_blank">Registreeru massaaži</a>
+                    </button>
+                </div>
             </div>
 
             <div class="gift-box">
-                <h2>Ei tea, mida kinkida?</h2>            
+                <h2 class="lng-what-to-give">Ei tea, mida kinkida?</h2>            
                 <div class="gift-card">
                     <div class="gift-container">
                         <img class="gift" src="images/Gift.png" alt="Photo of the gift-card.">
@@ -598,51 +608,64 @@
                     </div>
                 </div>
             </div>
-
+            <div class="mobile-pattern"></div>
 
             <div class="map-box">
-                <h2>Kuidas meid leida?</h2> 
+                <h2 class="lng-how-find">Kuidas meid leida?</h2> 
                 <div class="map-container">
                     <img src="images/Map.png" alt="Map.">
                     <img src="images/Hoone.png" alt="Photo of the location.">
                     <div class="map-text">
-                        <p class="">Tallinn, Harju maakond, Kesklinn, Väike-Ameerika 19, Nr.214</p>
-                        <p class="">Reg. nr. 16108248</p>
-                        <a class="" href="tel:+37258049570">Tel. +372 5804 9570</a>
+                        <p class="lng-address">Tallinn, Harju maakond, Kesklinn, Väike-Ameerika 19, Nr. 214</p>
+                        <p class="lng-reg">Reg. nr. 16108248</p>
+                        <a class="lng-tel" href="tel:+37258049570">Tel. +372 5804 9570</a>
                     </div>
                 </div>
             </div>
 
             <div class="slider-box-3">
-                <h2>Tagasiside</h2>
-                <div class="horizontal-media-scroller-3">
+                <h2 class="lng-feedback-caption">Tagasiside</h2>
+                <div>
                     <section>
-                        <ul>
+                        <ul class="horizontal-media-scroller-3">
                             <li>
-                                <a href="#">
+                                <a id="feedback" class="href-box-3" href="#">
                                     <figure>
                                         <picture>
-                                            <img alt="A placeholder image" loading="lazy" src="images/Man1.png">
+                                            <img class="img-figcaption-box-3" alt="A placeholder image" loading="lazy" src="images/Man1.png">
+                                            <div>
+                                                <figcaption class="lng-anna">Anna</figcaption>
+                                                <p class="lng-anna-text">Täname lõõgastava lõhnamassaaži eest.Hoidke nii!Kindlasti registreerun 
+                                                    uuesti.</p>
+                                            </div>
                                         </picture>
                                     </figure>
                                 </a>
                                 <!-- <a href=""><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a> -->
                             </li>
                             <li>
-                                <a href="#">
+                                <a class="href-box-3" href="#">
                                     <figure>
                                         <picture>
-                                            <img alt="A placeholder image" loading="lazy" src="images/Man2.png">
+                                            <img class="img-figcaption-box-3" alt="A placeholder image" loading="lazy" src="images/Man2.png">
+                                            <div>
+                                                <figcaption class="lng-marika">Marika</figcaption>
+                                                <p class="lng-marika-text">Väike hubane salong. Väga meeldiv massaažiterapeut. Teab oma tööd. Aitas selja probleemiga. Tänan teid väga.</p>
+                                            </div>
                                         </picture>
                                     </figure>
                                 </a>
                                 <!-- <a href=""><img class="arrow" src="images/Polygon.svg" alt="Arrow forward."></a> -->
                             </li>
                             <li>
-                                <a href="#">
+                                <a class="href-box-3" href="#">
                                     <figure>
                                         <picture>
-                                            <img alt="A placeholder image" loading="lazy" src="images/Man3.png">
+                                            <img class="img-figcaption-box-3" alt="A placeholder image" loading="lazy" src="images/Man3.png">
+                                            <div>
+                                                <figcaption class="lng-olga">Оlga</figcaption>
+                                                <p class="lng-olga-text">Lõõgastav aroomimassaaž on lihtsalt ime! Tõhusalt parandab meeleolu mitu nädalat. Soovitan!</p>
+                                            </div>
                                         </picture>
                                     </figure>
                                 </a>
@@ -657,6 +680,7 @@
 
 
             </div>
+            <div class="mobile-pattern"></div>
             
 
             <footer>

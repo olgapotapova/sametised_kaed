@@ -21,7 +21,7 @@ const langArr = {
     },
 
 
-    "klassikaline": {
+    "klassikaline-caption": {
         "ee": "Klassikaline massaaž",
         "ru": "Классический массаж",
     },
@@ -40,7 +40,7 @@ const langArr = {
     },
 
 
-    "aroma": {
+    "aroma-caption": {
         "ee": "Aroomimassaaž",
         "ru": "Аромамассаж",
     },
@@ -54,7 +54,7 @@ const langArr = {
     },
 
 
-    "anti-cellulite": {
+    "anti-cellulite-caption": {
         "ee": "Tselluliidivastane massaaž",
         "ru": "Антицеллюлитный массаж",
     },
@@ -69,7 +69,7 @@ const langArr = {
 
 
     
-    "сupping": {
+    "сupping-caption": {
         "ee": "Kupumassaaź",
         "ru": "Баночный массаж",
     },
@@ -83,7 +83,7 @@ const langArr = {
     },
 
 
-    "thai": {
+    "thai-caption": {
         "ee": "Tai massaaž",
         "ru": "Тайский массаж",
     },
@@ -98,7 +98,7 @@ const langArr = {
 
 
 
-    "lymphatic": {
+    "lymphatic-caption": {
         "ee": "Lümfimassaaž",
         "ru": "Лимфатический массаж",
     },
@@ -112,7 +112,7 @@ const langArr = {
     },
 
 
-    "children": {
+    "children-caption": {
         "ee": "Laste massaaž",
         "ru": "Детский массаж",
     },
@@ -127,7 +127,7 @@ const langArr = {
 
 
 
-    "lava": {
+    "lava-caption": {
         "ee": "Laavakivimassaaž",
         "ru": "Массаж камнями Лавы",
     },
@@ -142,7 +142,7 @@ const langArr = {
 
 
 
-    "classic-facial": {
+    "classic-facial-caption": {
         "ee": "Klassikaline näomassaaž",
         "ru": "Классический массаж лица",
     },
@@ -156,7 +156,7 @@ const langArr = {
     },
 
 
-    "shiatsu": {
+    "shiatsu-caption": {
         "ee": "Shiatsu massaaž",
         "ru": "Массаж Шиацу",
     },
@@ -169,7 +169,7 @@ const langArr = {
         "ru": "Травмы, остеоартрит, онкологические заболевания.",
     },
 
-    "sports": {
+    "sports-caption": {
         "ee": "Spordimassaaž",
         "ru": "Спортивный массаж",
     },
@@ -183,7 +183,7 @@ const langArr = {
     },
 
 
-    "segmental": {
+    "segmental-caption": {
         "ee": "Segmentaalne massaaž",
         "ru": "Сегментарный массаж",
     },
@@ -197,7 +197,7 @@ const langArr = {
     },
 
 
-    "pleasure": {
+    "pleasure-caption": {
         "ee": "Keha nauding",
         "ru": "Удовольствие для тела",
     },
@@ -210,17 +210,68 @@ const langArr = {
         "ru": "Аллергические реакции на компоненты масла, беременность.",
     },
 
-
-    "": {
-        "ee": "",
-        "ru": "",
+    "choose-massage": {
+        "ee": "Vali massaaž",
+        "ru": "Выбрать массаж",
     },
-    "": {
-        "ee": "",
-        "ru": "",
+    "services-prices": {
+        "ee": "MEIE TEENUSED JA HINNAD",
+        "ru": "НАШИ УСЛУГИ И ЦЕНЫ",
     },
-    "": {
-        "ee": "",
-        "ru": "",
+    "gallerii-caption": {
+        "ee": "Galerii",
+        "ru": "Галерея",
+    },
+    "sign": {
+        "ee": "Registreeru massaaži",
+        "ru": "Зарегистрироваться на массаж",
+    },
+    "what-to-give": {
+        "ee": "Ei tea, mida kinkida?",
+        "ru": "Не знаете, что подарить?",
+    },
+    "how-find": {
+        "ee": "Kuidas meid leida?",
+        "ru": "Как нас найти?",
+    },
+    "address": {
+        "ee": "Tallinn, Harju maakond, Kesklinn, Väike-Ameerika 19, Nr. 214",
+        "ru": "Таллинн, Харьюмаа, Центр города, Вяйке-Америка 19, № 214",
+    },
+    "reg": {
+        "ee": "Reg. nr. 16108248",
+        "ru": "Рег. номер 16108248",
+    },
+    "feedback-caption": {
+        "ee": "Tagasiside",
+        "ru": "Обратная связь",
+    },
+    "tel": {
+        "ee": "Tel. +372 5804 9570",
+        "ru": "Тел. +372 5804 9570",
+    },
+    "anna": {
+        "ee": "Anna",
+        "ru": "Анна",
+    },
+    "anna-text": {
+        "ee": "Täname lõõgastava lõhnamassaaži eest.Hoidke nii!Kindlasti registreerun uuesti.",
+        "ru": "Спасибо за расслабляющий арома-массаж. Так держать! Обязательно загляну еще раз.",
+    },
+    "marika": {
+        "ee": "Marika",
+        "ru": "Марика",
+    },
+    "marika-text": {
+        "ee": "Väike hubane salong. Väga meeldiv massaažiterapeut. Teab oma tööd. Aitas selja probleemiga. Tänan teid väga.",
+        "ru": "Небольшой уютный салон. Очень приятный массажист. Знает свою работу. Помогла решить проблему со спиной. Большое спасибо.",
+    },
+    "olga": {
+        "ee": "Оlga",
+        "ru": "Ольга",
+    },
+    "olga-text": {
+        "ee": "Lõõgastav aroomimassaaž on lihtsalt ime! Tõhusalt parandab meeleolu mitu nädalat. Soovitan!",
+        "ru": "Расслабляющий аромамассаж – это просто чудо! Эффективно улучшает настроение на несколько недель. Рекомендовать!",
     }
 }
