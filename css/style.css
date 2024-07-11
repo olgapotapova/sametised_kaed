@@ -8,6 +8,7 @@
   --card-color: rgba(99, 80, 80, 0.3);
   --gold: #CCC093;
   --yellow-button: #D0BD73;
+  --rose-button: #D18ABC;
     /* color-scheme: dark light; */
 }
 /* Cookies styles */
@@ -205,8 +206,10 @@ background-color: var(--black-gold);
     left: 0;
     margin-top: 85px;
         /* width: 100%; */
-    width: 100svw;
-    max-width: 100svw;
+    /* width: 100svw;
+    max-width: 100svw; */
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -441,35 +444,46 @@ label.btn:hover {
     margin-top: -11.5dvw; 
     background-position: center;
     width: 100dvw;
-    min-height: 47dvmax;
+    min-height: 55dvmax;
     height: auto;
+    overflow-x: hidden;
   }
   @media only screen and (min-width: 1500px) {
     .mere {
-        min-height: 50dvmax;
+        min-height: 55dvw;
     }
   }
   @media only screen and (max-width: 1200px) {
     .mere {
       background-image: url(/images/Mere.png);
       background-position: top;
-      min-height: 36dvmax;
-      height: auto;
+      min-height: 45dvw;
+      height: 45dvw;
+      margin-top: 0; 
     }
   }
   @media only screen and (max-width: 1000px) {
     .mere {
-      min-height: 30dvmax;
+      min-height: 35dvw;
+      height: 35dvw;
     }
   }
   @media only screen and (max-width: 600px) {
     .mere {
-      min-height: 34dvmax;
+      min-height: 50dvw;
+      height: 50dvw;
     }
   }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 500px) {
     .mere {
-      min-height: 28dvmax;
+      min-height: 65dvw;
+      height: 65dvw;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .mere {
+      min-height: 85dvw;
+      height: 85dvw;
     }
   }
   .text-box{
@@ -624,9 +638,15 @@ label.btn:hover {
       animation-delay: 0.1s;
       transition: 0s; 
     }
+    /* @media only screen and (max-width: 1000px) {
+      .white-button{
+        margin-top: 3%;
+      }
+    } */
     @media only screen and (max-width: 600px) {
       .white-button{
-        margin-top: 17%;
+        /* margin-top: 2%; */
+        margin-top: 5%;
         height: 86px;
         width: 294px;
         font-size: 1.2rem;
@@ -656,7 +676,7 @@ label.btn:hover {
       h3{
         font-size: 2rem;
         letter-spacing: 0.11rem;
-        margin-top: 5%;
+        margin-top: 0;
         line-height: 2rem;
       }
     }
@@ -665,20 +685,33 @@ label.btn:hover {
       min-width: 100%;
       padding-bottom: 8%;
     }
+
+    
     .slider-box-2::before{
-      content: url(/images/Patern1.svg);
+      content: "";
+      background-image: url(/images/Patern1.svg);
       position: absolute;
       margin-top: 15%;
+      width: 550px;
+      height: 550px;
+      position: absolute;
+      background-size: cover;
+      left: 0px;
     }
     .slider-box-2::after{
-      content: url(/images/Patern2.svg);
+      content: "";
+      background-image: url(/images/Patern2.svg);
       position: absolute;
       margin-top: -28%;
+      width: 550px;
+      height: 550px;
+      position: absolute;
+      background-size: cover;
       right: 0;
     }
     @media only screen and (max-width: 600px) {
       .slider-box-2::before{
-        max-width: 20px;
+        max-width: 10px;
         width: 20px;
         margin-top: 5%;
         height: 20px;
@@ -686,10 +719,11 @@ label.btn:hover {
     }
     @media only screen and (max-width: 600px) {
       .slider-box-2::after{
-        max-width: 20px;
-        width: 20px;
-        margin-top: -60%;
-        height: 20px;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        background-size: cover;
+        left: 0px;
         right: 80%;
       }
     }
@@ -718,20 +752,9 @@ label.btn:hover {
 html{
   font-size: 100%;
 } 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1400px) {
   html {
-      font-size: 0.7rem;
-      font-size: 70%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  html {
-      font-size: 50%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  html {
-      font-size: 60%;
+      font-size: 110%;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -739,9 +762,20 @@ html{
       font-size: 80%;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (max-width: 800px) {
   html {
-      font-size: 110%;
+      font-size: 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+      font-size: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+      font-size: 0.7rem;
+      font-size: 70%;
   }
 }
 section {
@@ -1138,7 +1172,7 @@ h6 + p{
   .price + object {
     height: 13%;
     min-height: 13%;
-    margin-top: -6%;
+    margin-top: 0;
     font-size: 1.1rem;
   }
 }
@@ -1146,11 +1180,11 @@ h6 + p{
   height: 100%;
   width: 100%;
   border-radius: 1ch;
-  border: 1px solid black;
+  border: 1px solid var(--purple-text);
   margin-left: auto;
   margin-right: auto;
   z-index: 5;
-  background-color: transparent;
+  background-color: var(--rose-button);
   color: black;
 }
 .card-button:hover{
@@ -1221,6 +1255,7 @@ h6 + p{
   left: 12%;
   top: 50%;
   z-index: 2000;
+  filter: invert(93%) sepia(7%) saturate(1237%) hue-rotate(3deg) brightness(95%) contrast(87%);
 }
 .arrow-2{
   position: absolute;
@@ -1228,10 +1263,9 @@ h6 + p{
   height: auto;
   /* right: 12%; */
   right: 5%;
-  /* right: -18%; */
   transform: rotate(180deg);
   top: 50%;
-  z-index: 4000;
+  z-index: 2000;
   /* top: 43%; */
   filter: invert(93%) sepia(7%) saturate(1237%) hue-rotate(3deg) brightness(95%) contrast(87%);
 }
@@ -1440,15 +1474,109 @@ margin-right: auto;
   .gift{
     background-color: var(--card-color);
   }
-  h5{
+  .ellipse{
+    display: none;
+  }
+  .gift-button{
+    display: none;
+  }
+  .gift-mobile-box{
     position: absolute;
+    width: 100%;
+    place-items: center;
+    display: flex;
+  }
+  .gift-text{
+    position: absolute;
+    place-items: center;
+    display: flex;
+    width: 15%;
+    height: auto;
+    margin-top: 35%;
+    margin-left: 60%;
+    /* top: 80%;
+    left: 10%;
+    transform: translate(100%, 90%); */
+    /* top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%); */
+  }
+  h5{
+    /* position: absolute; */
     color: var(--purple-text);
     font-style: italic;
     font-size: 0.9rem;
     text-align: center;
-    /* max-width: 10%; */
-    margin-top: 16%;
-    margin-left: 34%;
+  }
+
+  @media only screen and (max-width: 600px) { 
+    .gift-card{
+      border: none;
+    }
+    .gift-container{
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+    }
+    .gift{
+      width: 74dvw;
+      max-width: 74dvw;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40% 7% 40%;
+    }
+    .gift-back {
+      display: none;
+    }
+    .gift-mobile-box{
+      position: absolute;
+      display: flex;
+      place-items: center;
+      width: auto;
+      height: auto; 
+      margin-bottom: 80%;
+    }
+    .ellipse{
+      display: block;
+      /* position: absolute; */
+      min-width: 26dvw;
+      height: 26dvw;
+      /* margin-bottom: 140%; */
+      /* margin-left: 30%; */
+    }
+    .gift-text{
+      
+      height: auto;
+      width: auto;
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    .gift-button{
+      display: block;
+      position: absolute;
+      height: 15dvw;
+       width: 60dvw;
+      /*margin-top: 155%; */
+      top: 750%;
+      left: 50%;
+      transform:translate(-50%, -750%); 
+      border-radius: 1ch;
+      border: 1px solid var(--purple-text);
+      /* margin-top: 80%;
+      /* margin-left: auto;
+      margin-right: auto; */
+      z-index: 5;
+      background-color: var(--rose-button);
+      color: black;
+    }
+    .gift-button:hover{
+      background-color: var(--purple);
+    }
+    .gift-button a{
+      color: inherit;
+      font-weight: 500;
+    }
   }
     /* map */
     .map-box{
@@ -1489,10 +1617,22 @@ margin-right: auto;
       margin-bottom: 8%;
       background-color: var(--fon);
     }
-    .horizontal-media-scroller-3::after {
+    /* .horizontal-media-scroller-3::after {
       content: url(/images/Stars.svg);
       position: absolute;
-      margin-top: 45%;
+      top: 82%;
+      left: 50%;
+      transform:translate(-50%, -82%);
+    } */
+    @media only screen and (max-width: 600px){
+      .horizontal-media-scroller-3::after {
+        /* margin-top: 100%; */
+        /* margin-left: 40%; */
+        top:90%;
+        left:50%;
+        transform:translate(-50%, -90%);
+
+      }
     }
     .slider-box-3 h2{
       margin-bottom: -4%;
@@ -1509,6 +1649,7 @@ margin-right: auto;
       --size-3: 230px;    
       display: grid;
       grid-auto-flow: column;
+      justify-content: normal;
       grid-gap: calc(var(--gap) / 2);
       gap: calc(var(--gap) / 2);
       margin: 0;    

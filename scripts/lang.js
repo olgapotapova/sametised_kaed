@@ -272,6 +272,11 @@ const langArr = {
     },
     "olga-text": {
         "ee": "Lõõgastav aroomimassaaž on lihtsalt ime! Tõhusalt parandab meeleolu mitu nädalat. Soovitan!",
-        "ru": "Расслабляющий аромамассаж – это просто чудо! Эффективно улучшает настроение на несколько недель. Рекомендовать!",
+        "ru": "Расслабляющий аромамассаж – это просто чудо! Эффективно улучшает настроение на несколько недель. Рекомендую!",
+    },
+    "gift": {
+        "ee": "Meie kontoris saate osta kinkekaarte",
+        "ru": "Вы можете приобрести подарочные карты в нашем офисе",
     }
+
 }
