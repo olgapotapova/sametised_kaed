@@ -34,6 +34,54 @@ const langArr = {
         "ee": "Vastunäidustused:",
         "ru": "Противопоказания:",
     },
+    "contraindication-heder1": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder2": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder3": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder4": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder5": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder6": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder7": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder8": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder9": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder10": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder11": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
+    "contraindication-heder12": {
+        "ee": "Vastunäidustused:",
+        "ru": "Противопоказания:",
+    },
     "klassikaline-contraindication": {
         "ee": "Ägedad nakkushaigused, tromboflebiit, palavik.",
         "ru": "Острые инфекционные заболевания, тромбофлебит, повышенная температура тела.",

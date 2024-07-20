@@ -28,7 +28,6 @@ function changeLanguage() {
         location.href = window.location.pathname + '#ee';
         location.reload();
         select.value = hash;
-
     }
            
     language = select.value;
