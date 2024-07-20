@@ -1097,7 +1097,7 @@ h6 + p{
 }
 .slider-box-2 section::before{
   content: "";
-  background-image: url(/images/Patern1.svg);
+  background-image: url(https://olgapotapova.github.io/sametised_kaed//images/Patern1.svg);
   position: absolute;
   margin-top: -19%;
   width: 30dvw;
@@ -1109,7 +1109,7 @@ h6 + p{
 }
 .slider-box-2 section::after{
   content: "";
-  background-image: url(/images/Patern2.svg);
+  background-image: url(https://olgapotapova.github.io/sametised_kaed//images/Patern2.svg);
   position: absolute;
   margin-top: 70%;
   margin-right: 3%;
@@ -1754,7 +1754,7 @@ footer{
      @media only screen and (max-width: 600px) { 
       .mobile-pattern-top, .mobile-pattern{
         display: block;
-        content: url(/images/Mobile-pattern.svg);
+        content: url(https://olgapotapova.github.io/sametised_kaed/images/Mobile-pattern.svg);
         width: 60%;
         margin-left: auto;
         margin-right: auto;
