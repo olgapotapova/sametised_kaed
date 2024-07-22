@@ -104,12 +104,12 @@ background-color: var(--black-gold);
 }
 @font-face {
   font-family: "Kanyon-Light";
-  src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff");
+  /* src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff"); */
   font-display: fallback;
-  /* src: url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot"); */
-  /* src: url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
-      format("svg"), url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff"), url("foonts/kanyon/TTF/kanyon-light.ttf")
-      format("truetype"); */
+  /* src: url("./../foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot"); */
+  src: url("./../foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("./../foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
+      format("svg"), url("./../foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff"), url("./../foonts/kanyon/TTF/kanyon-light.ttf")
+      format("truetype");
   }
   h1, h2, h3, select, .footer-text{
     font-family: "kanyon";
