@@ -16,7 +16,7 @@ function changeURLLanguage() {
 function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substring(1);
-    console.log(hash);
+    // console.log(hash);
     //Seach language from local storage
     const selectedLangLocalStorage = localStorage.getItem('selectedLang');
     if (selectedLangLocalStorage) {
