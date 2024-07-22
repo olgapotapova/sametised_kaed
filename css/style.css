@@ -103,8 +103,9 @@ background-color: var(--black-gold);
   background-color: var(--fon);
 }
 @font-face {
-  font-family: "Kanyon-Light";
-  src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff");
+  font-family: "kanyon";
+  /* font-family: "Kanyon-Light"; */
+  src: url("https://olgapotapova.github.io/sametised_kaed/foonts/Kanyon-Light.woff") format("woff");
   font-display: fallback;
   /* src: url("./../foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot"); */
   src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
