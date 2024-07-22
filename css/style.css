@@ -104,7 +104,7 @@ background-color: var(--black-gold);
 }
 @font-face {
   font-family: "Kanyon-Light";
-  src: url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff");
+  src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff");
   font-display: fallback;
   /* src: url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot"); */
   /* src: url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
@@ -594,7 +594,9 @@ label.btn:hover {
       height: 90px;
       width: 380px;
       text-align: center;
-      line-height: 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
       border-radius: 1ch;
       border: 1px solid var(--purple-text);
@@ -1054,7 +1056,10 @@ h6 + p{
   }
 }
 .card-button{
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 9% 36%;
   max-width: 100%;
   border-radius: 1ch;
@@ -1200,13 +1205,11 @@ h6 + p{
   justify-content: center;
   margin-top: -18dvw;
 }
-@media only screen and (max-width: 600px) { 
-  .yellow-button-box {
-    margin-top: -15dvw;
-  }
-}
 .yellow-button{
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 5;
   text-decoration: none;
   height: 90px;
@@ -1220,6 +1223,14 @@ h6 + p{
 }
 .yellow-button:hover{
   background-color: var(--purple);
+}
+@media only screen and (max-width: 600px) { 
+  .yellow-button-box {
+    margin-top: -15dvw;
+  }
+.yellow-button{
+  max-width: var(--size-2);
+}
 }
 .horizontal-media-scroller-2::-webkit-scrollbar {
   display: none;
@@ -1283,11 +1294,8 @@ h6 + p{
     height: auto;
   }
   .horizontal-media-scroller-2 figure > picture > img{
-    /* display: block; */
     padding: 15%;
     width: 100%;
-    /* min-width: 100%; */
-    /* min-width: calc(var(--size-2)/2); */
     -o-object-fit: cover;
     object-fit: cover;
     margin-left: auto;
@@ -1306,21 +1314,17 @@ h6 + p{
     margin-right: auto;
     margin-bottom: 8%;
   }
-
   .gift-box{
     margin: 0;
     background-color: var(--fon);
   }
-
   .gift-container{
     display: inline-flex;
     justify-content: center;   
     margin-top: 7dvw;
     margin-bottom: 7dvw;
   }
-
   .gift, .gift-back{
-    /* padding: 30%; */
     -o-object-fit: contain;
     object-fit: contain;
     overflow: hidden;
@@ -1330,7 +1334,6 @@ h6 + p{
     border: 1px solid black;
     border-radius: 1ch;
     padding: 11% 7% 11%;
-    /* max-height: calc(var(--size)/2); */
   }
   .gift{
     background-color: var(--card-color);
@@ -1355,15 +1358,8 @@ h6 + p{
     height: auto;
     margin-top: 35%;
     margin-left: 60%;
-    /* top: 80%;
-    left: 10%;
-    transform: translate(100%, 90%); */
-    /* top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%); */
   }
   h5{
-    /* position: absolute; */
     color: var(--purple-text);
     font-style: italic;
     font-size: 0.9rem;
@@ -1398,11 +1394,8 @@ h6 + p{
     }
     .ellipse{
       display: block;
-      /* position: absolute; */
       min-width: 26dvw;
       height: 26dvw;
-      /* margin-bottom: 140%; */
-      /* margin-left: 30%; */
     }
     .gift-text{      
       height: auto;
@@ -1411,7 +1404,9 @@ h6 + p{
       margin-left: 0;
     }
     .gift-button{
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       height: 15dvw;
       width: 61dvw;
@@ -1420,16 +1415,13 @@ h6 + p{
       transform:translate(-50%, -750%); 
       border-radius: 1ch;
       border: 1px solid var(--purple-text);
-      /* z-index: 5; */
+      text-decoration: none;
       background-color: var(--rose-button);
       color: black;
+      font-weight: 500;
     }
     .gift-button:hover{
       background-color: var(--purple);
-    }
-    .gift-button a{
-      color: inherit;
-      font-weight: 500;
     }
   }
     /* map */
