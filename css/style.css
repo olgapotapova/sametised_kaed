@@ -70,77 +70,75 @@ background-color: var(--black-gold);
 }
 /* /////////////// */
 .modal{
-    position: absolute;
-    border: 0;     
-    min-width: 50%; 
-    max-width: 700px;
-    /* width: 700px; */
-    width: 50%; 
-    background-color: transparent;
-    overflow: hidden;
-    max-height: 900px;
-    height: 900px;
-    left: 20px;
-    top: 110%;
-    padding: .5em 1em;
+  position: absolute;
+  border: 0;     
+  min-width: 50%; 
+  max-width: 700px;
+  /* width: 700px; */
+  width: 50%; 
+  background-color: transparent;
+  overflow: hidden;
+  max-height: 900px;
+  height: 900px;
+  left: 20px;
+  top: 110%;
+  padding: .5em 1em;
 }
 .modal:before {
-    content: " ";
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100dvw;
-    height: 100dvh;
-    background-color: rgba(0,0,0,0.3);
-    z-index: -1;
+  content: " ";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -1;
   }
-  .app{
-    position: relative;
-    min-height: 100dvh;
-    font-family: "Lato", sans-serif;
+.app{
+  position: relative;
+  min-height: 100dvh;
+  font-family: "Lato", sans-serif;
 } 
 .app{
   background-color: var(--fon);
 }
 @font-face {
+font-family: "kanyon";
+src: url("https://olgapotapova.github.io/sametised_kaed/foonts/Kanyon-Light.woff") format("woff");
+font-display: fallback;
+src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
+  format("svg"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/TTF/kanyon-light.ttf")
+  format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+h1, h2, h3, select, .footer-text{
   font-family: "kanyon";
-  /* font-family: "Kanyon-Light"; */
-  src: url("https://olgapotapova.github.io/sametised_kaed/foonts/Kanyon-Light.woff") format("woff");
-  font-display: fallback;
-  /* src: url("./../foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot"); */
-  src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
-      format("svg"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/TTF/kanyon-light.ttf")
-      format("truetype");
-      font-weight: lighter;
-      font-style: normal;
-  }
-  h1, h2, h3, select, .footer-text{
-    font-family: "kanyon";
-  }
-  .menu-box{
-    position:fixed;
-    display: flex;
-    flex-direction: row;
-    width: 100svw;
-    max-width: 100svw;
-    overflow-x: hidden;
-    overflow-y: auto; 
-    max-height: 11.5dvw;
-    min-height: 11.5dvw;
-    height: 11.5dvw;
-    top: 0;
-    margin-bottom: auto;
-    background: transparent;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 4;
-    opacity: 0;
-    transition: 2s;
-    animation: show 7s 1;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-  }
-  .menu__bg__start {
+}
+.menu-box{
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100svw;
+  max-width: 100svw;
+  overflow-x: hidden;
+  overflow-y: auto; 
+  max-height: 11.5dvw;
+  min-height: 11.5dvw;
+  height: 11.5dvw;
+  top: 0;
+  margin-bottom: auto;
+  background: transparent;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 4;
+  opacity: 0;
+  transition: 2s;
+  animation: show 7s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.menu__bg__start {
     position: fixed;
     top: 0;
     width: 100%;
@@ -295,7 +293,7 @@ background-color: var(--black-gold);
 }
 /* Menu button */
 label.btn {
-  display:  flow;
+  /* display:  flow; */
   position: relative;
   min-width: 90px;
   width: 90px;
@@ -883,6 +881,7 @@ figure {
 .figcaption-box{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: calc(var(--size)/2);
   max-width: calc(var(--size)/2);
   max-height: calc(var(--size)/2);
@@ -943,49 +942,138 @@ figure > .figcaption-box > figcaption {
   @media only screen and (max-width: 600px) { 
     .img-figcaption-box {
       display: block;
-      width: 50%;
+      width: 80%;
       height: auto;
-      margin: 12%;
+      height: 40%;
+      object-position: center;
+      object-fit: contain;
+      margin: 0%;
       }
     }
 
-  .img-figcaption-box + p{
-  display: flexbox;
+  .card-text{
+  margin-top: 6%;
   font-size: 0.7rem;
   font-weight: normal;
-  line-height: 1;
   word-break: break-word;
-  margin-top: 11%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media only screen and (max-width: 800px) { 
-  .img-figcaption-box + p{
-    font-size: 0.6rem;
+  .card-text{
+    font-size: 0.8rem;
     }
   }
 
+@media only screen and (max-width: 700px) { 
+    .card-text{
+      font-size: 0.7rem;
+      }
+    }
+
 @media only screen and (max-width: 600px) { 
-  .img-figcaption-box + p{
+  .card-text{
+    max-width: 86%;
     font-size: 1rem;
     margin-top: 1%;
     }
   }
 
-h6{
-  /* position: absolute;
-  top: 32%; */
-  margin-top: 7%;
-  font-size: 0.9rem;
-  display: flex;
-  font-weight: 300;
-  line-height: 0.1;
-  word-break: break-word;
+  @media only screen and (max-width: 460px) { 
+    .card-text{
+      font-size: 0.9rem;
+      }
+    }
+
+    @media only screen and (max-width: 415px) { 
+      .card-text{
+        font-size: 0.8rem;
+        }
+      }
+
+  /* Hide the toggle checkbox */
+.expand-toggle {
+  display: none;
 }
 
-@media only screen and (max-width: 800px) { 
+/* Style the button */
+.expand-btn {
+  position: absolute;
+  top: 35%;
+  display: flex;
+  font-size: 0.7rem;
+  border-radius: 0.8ch;
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 5px 15px 5px 15px;
+  align-items: center; 
+}
+
+@media only screen and (max-width: 600px) { 
+  .expand-btn{
+    top: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) { 
+    .expand-btn{
+      top: 58%;
+      }
+    }
+
+ .expand-btn-hidden{
+  display: none;
+  margin-top: -25px;
+  font-size: 0.7rem;
+  border-radius: 0.8ch;
+  border: 1px solid black;
+  padding: 5px 32px 5px 32px;
+  align-items: center; 
+  background-color: rgb(249, 249, 164);
+ }
+
+.expand-toggle:checked +  p{
+  overflow: visible;
+  -webkit-line-clamp: none;
+  line-clamp: none;
+}
+
+/* Style the button when the checkbox is checked */
+.expand-toggle:checked ~ .expand-btn {
+  position: relative;
+  margin-top: 10px;
+  top: 0;
+  opacity: 0;
+}
+
+/* Show hidden content when the checkbox is checked */
+.expand-toggle:checked ~ .expand-btn-hidden{
+  display: block;
+}
+
+/* Hide content when the checkbox is checked */
+.expand-toggle:checked ~ h6, .expand-toggle:checked ~ .contraindication, .expand-toggle:checked ~ .price{
+  display: none;
+}
+
+h6{
+  font-size: 0.9rem;
+  position: absolute;
+  top: 38%;
+}
+
+.footer-h6{
+  position: relative;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 900px) { 
   h6 {
-    font-size: 0.9rem;    
-    margin-top: 6%;
-    margin-bottom: 12%;
+    top: 36%;
     }
   }
 
@@ -993,18 +1081,25 @@ h6{
   h6 {
     font-size: 1.2rem;
     line-height: 1;
+    top: 60%;
     }
   }
+  @media only screen and (max-width: 500px) { 
+    h6 {
+      font-size: 1.2rem;
+      line-height: 1;
+      top: 57%;
+      }
+    }
 
 h6 + p{
-  /* display: flexbox; */
+  position: absolute;
+  top: 52%;
+  display: flexbox;
   font-size: 0.7rem;
-  font-weight: 300;
+  font-weight: lighter;
   word-break: break-word;
-  /* min-height: 1rem; */
-  /* position: absolute;
-  top: 43.5%; */
-  margin-top: -7%;
+  max-width: 38%;
 }
 
 @media only screen and (max-width: 800px) { 
@@ -1016,50 +1111,58 @@ h6 + p{
 @media only screen and (max-width: 600px) { 
   h6 + p{
     font-size: 1rem;
-    margin-top: -8%;
+    top: 68%;
+    max-width: 80%;
     }
   }
 
+  @media only screen and (max-width: 500px) { 
+    h6 + p{
+      font-size: 1rem;
+      top: 66%;
+      }
+    }
+    @media only screen and (max-width: 460px) { 
+      h6 + p{
+        font-size: 0.9rem;
+        }
+      }
+
+      @media only screen and (max-width: 415px) { 
+        h6 + p{
+          font-size: 0.8rem;
+          }
+        }
+
 .price{
-  line-height: 7;
+  position: absolute;
+  top: 62%;
   font-weight: bold;
   font-size: 0.8rem;
 }
-@media only screen and (max-width: 1200px) {
-  .price {
-    line-height: 4;
-  }
-}
-
-@media only screen and (max-width: 800px) { 
-  .price {
-    line-height: 1.5;
-  }
-  }
 
   @media only screen and (max-width: 600px) { 
     .price {
-      font-size: 1.2rem;
-      line-height: 3.5;
+      font-size: 1.05rem;
+      top: 73%;
     }
-    }
+  }
 
 .price + object{
-  height: 25%;
-  min-height: 25%;
-  width: 98%;
+  width: 38%;
+  position: absolute;
+  bottom: 10%;
 }
 
 @media only screen and (max-width: 600px) { 
   .price + object {
-    height: 13%;
-    min-height: 13%;
+    width: 80%;
     margin-top: 0;
     font-size: 1.1rem;
+    bottom: 10%;
   }
 }
 .card-button{
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -28,7 +28,7 @@ const langArr = {
     "klassikaline-text": {
         "ee": 
         "Klassikaline massaaž on tõhus viis pingete maandamiseks ja vereringe parandamiseks. See aitab lõõgastuda, vähendab valu lihastes ja liigestes.",
-        "ru": "Классический массаж — это эффективный способ снятия напряжения и улучшения кровообращения. Он помогает расслабиться, уменьшить боль в мышцах и суставах",
+        "ru": "Классический массаж — это эффективный способ снятия напряжения и улучшения кровообращения. Он помогает расслабиться, уменьшить боль в мышцах и суставах.",
     },
     "contraindication-heder": {
         "ee": "Vastunäidustused:",
@@ -84,7 +84,7 @@ const langArr = {
     },
     "klassikaline-contraindication": {
         "ee": "Ägedad nakkushaigused, tromboflebiit, palavik.",
-        "ru": "Острые инфекционные заболевания, тромбофлебит, повышенная температура тела.",
+        "ru": "Острые инфекционные заболевания, тромбофлебит, повышенная температура.",
     },
 
 
@@ -123,7 +123,7 @@ const langArr = {
     },
     "сupping-text": {
         "ee": "Kupumassaaž on tehnika, mis kasutab silikoonkuppe, et tekitada nahale vaakum. See aitab parandada vereringet, hajutada kapillaare ja vähendada tselluliidi teket.",
-        "ru": "Баночный массаж – это метод, при котором используются силиконовые чашки для создания вакуума на коже. Это помогает улучшить кровообращение, расширить капилляры и уменьшить проявления целлюлита",
+        "ru": "Баночный массаж – это метод, при котором используются силиконовые чашки для создания вакуума на коже. Это помогает улучшить кровообращение, расширить капилляры и уменьшить проявления целлюлита.",
     },
     "сupping-contraindication": {
         "ee": "Kahjustatud nahk, veenilaiendid, rasedus.",
@@ -250,7 +250,7 @@ const langArr = {
         "ru": "Удовольствие для тела",
     },
     "pleasure-text": {
-        "ee": "Keha nauding sobib nendele, kes tahaks lõdvestada keha või teha kingituse oma õele, tütrele, emale. Sisaldab: 1 tund aroomimassaaž + klassikaline näo massaaž",
+        "ee": "Keha nauding sobib nendele, kes tahaks lõdvestada keha või teha kingituse oma õele, tütrele, emale. Sisaldab: 1 tund aroomimassaaž + klassikaline näo massaaž.",
         "ru": "«Удовольствие для тела» подойдет тем, кто хочет расслабить свое тело или сделать подарок сестре, дочери, маме. Включает: 1 час аромамассажа + классический массаж лица.",
     },
     "pleasure-contraindication": {
@@ -325,6 +325,22 @@ const langArr = {
     "gift": {
         "ee": "Meie kontoris saate osta kinkekaarte",
         "ru": "Вы можете приобрести подарочные карты в нашем офисе",
+    },
+    "choose": {
+        "ee": "Vali massaaž",
+        "ru": "Выбрать массаж",
+    },
+    "read-more": {
+        "ee": "Loe edasi...",
+        "ru": "Читать дальше...",
+    },
+    "hide": {
+        "ee": "Peita",
+        "ru": "Скрыть",
+    },
+    "": {
+        "ee": "",
+        "ru": "",
     }
 
 }
