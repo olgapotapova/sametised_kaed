@@ -33,7 +33,10 @@ function changeLanguage() {
     language = select.value;
     document.querySelector('title').innerHTML = langArr['sametised'][language];
     for (let key in langArr) {
+        // elementList = document.querySelectorAll('.lng-' + key);
         let elem = document.querySelector('.lng-' + key);
+       
+        
         if (elem) {
             elem.innerHTML = langArr[key][language];
         }

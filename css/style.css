@@ -1037,6 +1037,8 @@ figure > .figcaption-box > figcaption {
  }
 
 .expand-toggle:checked +  p{
+  display: contents;
+  height: auto;
   overflow: visible;
   -webkit-line-clamp: none;
   line-clamp: none;
@@ -1045,7 +1047,9 @@ figure > .figcaption-box > figcaption {
 /* Style the button when the checkbox is checked */
 .expand-toggle:checked ~ .expand-btn {
   position: relative;
+  /* margin-top: 38%; */
   margin-top: 10px;
+  /* margin-bottom: 50%; */
   top: 0;
   opacity: 0;
 }
@@ -1238,8 +1242,6 @@ h6 + p{
   grid-gap: calc(var(--gap)  * 8);
   gap: calc(var(--gap)  * 2);
   margin: 0;  
-  /* padding-left: calc(var(--gap) * 2);
-  padding-right: calc(var(--gap) * 2);  */
   padding-left: var(--gap);
   padding-right: var(--gap);
   padding-bottom: calc(var(--gap) / 8);
@@ -1247,8 +1249,6 @@ h6 + p{
   overscroll-behavior-inline: contain;
   -ms-scroll-snap-type: inline mandatory;
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: var(--gap);
-  scroll-padding: var(--gap);
   -ms-overflow-style: none; 
   scrollbar-width: none;  
 
@@ -1273,7 +1273,7 @@ h6 + p{
 .arrow-back-2-p{
   position: absolute;
   display: flexbox;
-  left: 12%;
+  left: 5%;
   top: 50%;
   z-index: 2000;
 }
@@ -1342,9 +1342,10 @@ h6 + p{
   display: none;
 }
 .horizontal-media-scroller-2 > li {
-  display: inline-block;
+  display: flex;
   margin-right: auto; 
   margin-left: auto;
+  align-items: center;
   margin-top: -6dvw;
   margin-bottom: calc(var(--size-2)/9);
   text-align: center;
@@ -1353,7 +1354,8 @@ h6 + p{
   }
   .horizontal-media-scroller-2 > a, .picture-href {
     max-width: 100%;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1393,7 +1395,7 @@ h6 + p{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
 }
 .horizontal-media-scroller-2 figure > picture {
     width: var(--size-2);

@@ -298,11 +298,11 @@ const langArr = {
         "ee": "Tel. +372 5804 9570",
         "ru": "Тел. +372 5804 9570",
     },
-    "anna": {
-        "ee": "Anna",
-        "ru": "Анна",
+    "olesja": {
+        "ee": "Olesja",
+        "ru": "Олеся",
     },
-    "anna-text": {
+    "olesja-text": {
         "ee": "Täname lõõgastava lõhnamassaaži eest.Hoidke nii!Kindlasti registreerun uuesti.",
         "ru": "Спасибо за расслабляющий арома-массаж. Так держать! Обязательно загляну еще раз.",
     },
@@ -338,9 +338,9 @@ const langArr = {
         "ee": "Peita",
         "ru": "Скрыть",
     },
-    "": {
-        "ee": "",
-        "ru": "",
+    "price": {
+        "ee": "2 tundi 15 min - 70€",
+        "ru": "2  часа 15 мин. - 70€",
     }
 
 }
