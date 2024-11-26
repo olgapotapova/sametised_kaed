@@ -341,6 +341,18 @@ const langArr = {
     "price": {
         "ee": "2 tundi 15 min - 70€",
         "ru": "2  часа 15 мин. - 70€",
+    },   
+    "in-social-networks": {
+        "ee": "Oleme sotsiaalvõrgustikes:",
+        "ru": "Мы в социальных сетях:",
+    },
+    "cookie-text": {
+        "ee": "See veebisait kasutab küpsiseid, et tagada teile meie veebisaidil parim kasutuskogemus.",
+        "ru": "Этот веб-сайт использует файлы cookie, чтобы обеспечить вам наилучший эффект от его использования.",
+    },   
+    "cookie-button": {
+        "ee": "Nõustu",
+        "ru": "Принять",
     }
 
 }

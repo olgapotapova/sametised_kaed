@@ -1,7 +1,7 @@
 var cookiesText = `<div class="modal" id="cookieModal">
 <div class="modal-content">
-    <p>This website uses cookies to ensure you get the best experience on our website.</p>
-    <button id="acceptCookiesBtn">Accept</button>
+    <p class="lng-cookie-text">This website uses cookies to ensure you get the best experience on our website.</p>
+    <button class="lng-cookie-button" id="acceptCookiesBtn">Accept</button>
 </div>
 </div>`;
 

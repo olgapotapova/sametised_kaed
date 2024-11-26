@@ -26,10 +26,12 @@
 }
 
 .modal-content {
+  position: relative;
   display: flex;
+  align-items: center;
   flex-direction: row;
   background-color: var(--fon);
-  margin: 80vh auto 20vh auto;
+  margin: 200px auto auto auto;
   padding: 20px 20px 20px 40px;
   border: 1px solid #888;
   width: 90%;
@@ -39,10 +41,17 @@
   font-style: italic;
   font-weight: bold;
 }
-.modal-content p{
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+ }
+ .modal-content p{
   line-height: 44px;
+  line-height: 1;
 }
-
 #acceptCookiesBtn {
   display: flex;
   margin-left: auto;
@@ -50,7 +59,7 @@
   justify-content: center;
   vertical-align: middle;
   max-width: 200px;
-  width: 50%;
+  width: 100%;
   height: 50px;
   font-style: italic;
   font-weight: 600;
@@ -68,6 +77,13 @@
 #acceptCookiesBtn:hover {
 background-color: var(--black-gold);
 }
+@media only screen and (max-width: 600px) {
+  #acceptCookiesBtn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+ }
 /* /////////////// */
 .modal{
   position: absolute;
@@ -293,7 +309,6 @@ h1, h2, h3, select, .footer-text{
 }
 /* Menu button */
 label.btn {
-  /* display:  flow; */
   position: relative;
   min-width: 90px;
   width: 90px;
@@ -481,28 +496,6 @@ label.btn:hover {
       flex-direction: column;
     }
   }
-    h1 {
-      font-size: 12rem;
-      letter-spacing: 0.6rem;
-      font-weight: lighter;
-      text-align: center;
-      margin-left: 3.5dvw;
-      color: white;
-      opacity: 0;
-      transition: 2s;
-      animation: show 9s 1;
-      animation-fill-mode: forwards;
-      animation-delay: 1.5s;
-      text-transform: uppercase;
-    }
-    @media only screen and (max-width: 600px) {
-      h1 {
-        margin-left: 0;
-        font-size: 7.5rem;
-        letter-spacing: 0.4rem;
-        margin-top: 2%;
-      }
-    }
     @keyframes show{
       0%{
         opacity: 0;
@@ -534,6 +527,28 @@ label.btn:hover {
         transform: translateY(30px);
       }
     }
+    h1 {
+      font-size: 12rem;
+      letter-spacing: 0.6rem;
+      font-weight: lighter;
+      text-align: center;
+      margin-left: 3.5dvw;
+      color: white;
+      opacity: 0;
+      transition: 2s;
+      animation: show 9s 1;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
+      text-transform: uppercase;
+    }
+    @media only screen and (max-width: 600px) {
+      h1 {
+        margin-left: 0;
+        font-size: 7.5rem;
+        letter-spacing: 0.4rem;
+        margin-top: 2%;
+      }
+    }
     h1 + span{
       font-family: "Lato", sans-serif;
       font-size: 0.6rem;
@@ -543,6 +558,11 @@ label.btn:hover {
       font-style: normal;
       color: white;     
       margin-top: 6dvw;
+      opacity: 0;
+      transition: 2s;
+      animation: show 9s 1;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
       text-transform: uppercase;
     }
     @media only screen and (max-width: 600px) {
@@ -581,7 +601,7 @@ label.btn:hover {
       transition: 2s;
       animation: show 7s 1;
       animation-fill-mode: forwards;
-      animation-delay: 2s;
+      animation-delay: 0.8s;
     } 
     @media only screen and (max-width: 600px) {
       h3{
@@ -592,8 +612,8 @@ label.btn:hover {
       }
     }
     .white-button{
-      height: 90px;
-      width: 380px;
+      width: calc(var(--sm-space) * 12);
+      height: calc(var(--sm-space) * 2.5);
       text-align: center;
       display: flex;
       justify-content: center;
@@ -610,7 +630,7 @@ label.btn:hover {
       transition: 2s;
       animation: show 7s 1;
       animation-fill-mode: forwards;
-      animation-delay: 1s;
+      animation-delay: 2s;
       color: black;
     }
     .white-button:hover{
@@ -620,24 +640,12 @@ label.btn:hover {
       animation-delay: 0.1s;
       transition: 0s; 
     }
-    /* @media only screen and (max-width: 1000px) {
-      .white-button{
-        margin-top: 3%;
-      }
-    } */
     @media only screen and (max-width: 600px) {
       .white-button{
-        /* margin-top: 2%; */
         margin-top: 14%;
-        height: 86px;
-        width: 294px;
         font-size: 1.2rem;
       }
     }
-    /* .white-button > a{
-      color: inherit;
-      text-decoration: none;
-    } */
      /* carousel */
     .slider-box-1, .slider-box-2{
       background-color: var(--fon);
@@ -1037,7 +1045,8 @@ figure > .figcaption-box > figcaption {
  }
 
 .expand-toggle:checked +  p{
-  display: contents;
+  display: flex;
+  flex-wrap: wrap;
   height: auto;
   overflow: visible;
   -webkit-line-clamp: none;
@@ -1047,9 +1056,7 @@ figure > .figcaption-box > figcaption {
 /* Style the button when the checkbox is checked */
 .expand-toggle:checked ~ .expand-btn {
   position: relative;
-  /* margin-top: 38%; */
   margin-top: 10px;
-  /* margin-bottom: 50%; */
   top: 0;
   opacity: 0;
 }
@@ -1073,6 +1080,7 @@ h6{
 .footer-h6{
   position: relative;
   font-weight: normal;
+  line-height: 0.1;
 }
 
 @media only screen and (max-width: 900px) { 
@@ -1101,7 +1109,7 @@ h6 + p{
   top: 52%;
   display: flexbox;
   font-size: 0.7rem;
-  font-weight: lighter;
+  font-weight: normal;
   word-break: break-word;
   max-width: 38%;
 }
@@ -1140,7 +1148,7 @@ h6 + p{
 
 .price{
   position: absolute;
-  top: 62%;
+  top: 60%;
   font-weight: bold;
   font-size: 0.8rem;
 }
@@ -1155,7 +1163,7 @@ h6 + p{
 .price + object{
   width: 38%;
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
 }
 
 @media only screen and (max-width: 600px) { 
@@ -1170,7 +1178,9 @@ h6 + p{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9% 36%;
+  /* padding: 9% 36%; */
+  width: calc(var(--sm-space) * 12);
+  height: calc(var(--sm-space) * 2.5);
   max-width: 100%;
   border-radius: 1ch;
   border: 1px solid var(--purple-text);
@@ -1209,6 +1219,8 @@ h6 + p{
   grid-gap: var(--gap);
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 .slider-box-2 section::before{
   content: "";
@@ -1226,13 +1238,14 @@ h6 + p{
   content: "";
   background-image: url(https://olgapotapova.github.io/sametised_kaed//images/Patern2.svg);
   position: absolute;
-  margin-top: 70%;
+  margin-top: 50%;
   margin-right: 3%;
   width: 30dvw;
   height: 30dvw;
   background-size: cover;
   right: 0;
   overflow: hidden;
+  z-index: -1;
 }
 .horizontal-media-scroller-2 {
   text-align: center;
@@ -1305,27 +1318,37 @@ h6 + p{
   filter: invert(82%) sepia(49%) saturate(3772%) hue-rotate(223deg) brightness(101%) contrast(97%);
 }
 .yellow-button-box{
-  position: absolute;
-  width: 100%;
+  /* --size-2: 98dvw; */
+  /* --width: calc(var(--size-2)/2); */
+  /* width: var(--width); */
+  max-width: var(--width);
   display: flex;
   justify-content: center;
-  margin-top: -18dvw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10%;
 }
 .yellow-button{
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 5;
+  /* line-height: 5; */
   text-decoration: none;
-  height: 90px;
-  width: 380px;
+  /* height: 90px;
+  width: 380px; */
+  /* padding: 9% 36%; */
+  width: calc(var(--sm-space) * 12);
+  height: calc(var(--sm-space) * 2.6);
+  white-space: nowrap;
   border-radius: 1ch;
   border: 1px solid var(--purple-text);
   background-color: var(--yellow-button);
   animation-fill-mode: forwards;
   animation-delay: 1s;
   color: black;
+  position: relative;
+  z-index: 1;
 }
 .yellow-button:hover{
   background-color: var(--purple);
@@ -1335,7 +1358,8 @@ h6 + p{
     margin-top: -15dvw;
   }
 .yellow-button{
-  max-width: var(--size-2);
+  /* max-width: var(--size-2);
+  margin: 15%; */
 }
 }
 .horizontal-media-scroller-2::-webkit-scrollbar {
@@ -1395,31 +1419,32 @@ h6 + p{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* scroll-snap-align: center; */
 }
 .horizontal-media-scroller-2 figure > picture {
     width: var(--size-2);
     height: auto;
+    display: flex;
+    align-items: center;
   }
   .horizontal-media-scroller-2 figure > picture > img{
-    padding: 15%;
+    margin: 15%;
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
+    border: 1px solid transparent;
+    border-radius: 1ch;
   } 
   .gift-card{
     width: 86dvw;
+    /* max-width: 66dvw; */
     border: 1px solid black;
     border-radius: 1ch;
     box-sizing: border-box;
     --gap: var(--md-space);
-    display: grid;
-    grid-gap: var(--gap);
-    gap: var(--gap);
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
     margin-bottom: 8%;
   }
   .gift-box{
@@ -1455,8 +1480,9 @@ h6 + p{
   .gift-mobile-box{
     position: absolute;
     width: 100%;
-    place-items: center;
     display: flex;
+    place-items: center;
+    max-height: 100%;
   }
   .gift-text{
     position: absolute;
@@ -1464,7 +1490,7 @@ h6 + p{
     display: flex;
     width: 15%;
     height: auto;
-    margin-top: 35%;
+    margin-top: 33%;
     margin-left: 60%;
   }
   h5{
@@ -1476,6 +1502,8 @@ h6 + p{
   @media only screen and (max-width: 600px) { 
     .gift-card{
       border: none;
+      width: 66dvw;
+      max-width: 66dvw;
     }
     .gift-container{
       display: flex;
@@ -1483,22 +1511,24 @@ h6 + p{
       place-items: center;
     }
     .gift{
-      width: 74dvw;
-      max-width: 74dvw;
+      width: 70dvw;
+      max-width: 70dvw;
       margin-left: auto;
       margin-right: auto;
-      padding: 40% 7% 40%;
+      padding: 45% 10% 45%;
     }
     .gift-back {
       display: none;
     }
     .gift-mobile-box{
       position: absolute;
+      flex-direction: column;
+      margin-top: -10%;
+      justify-content: space-between;
       display: flex;
       place-items: center;
       width: auto;
-      height: auto; 
-      margin-bottom: 80%;
+      height: calc(66dvw * 1.35);
     }
     .ellipse{
       display: block;
@@ -1508,19 +1538,22 @@ h6 + p{
     .gift-text{      
       height: auto;
       width: auto;
-      margin-top: 0;
-      margin-left: 0;
+      margin-left: auto;
+      margin-top: auto;
+      margin-top: 15%;
     }
     .gift-button{
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
-      height: 15dvw;
-      width: 61dvw;
-      top: 750%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      height: calc(var(--sm-space) * 2.5);
+      width: 56dvw;
+      max-width: 56dvw;
       left: 50%;
-      transform:translate(-50%, -750%); 
+      transform:translate(-50%, 0); 
       border-radius: 1ch;
       border: 1px solid var(--purple-text);
       text-decoration: none;
@@ -1545,9 +1578,24 @@ h6 + p{
       margin-right: auto;
       margin-top: 5dvw;
     }
-    .house{
-      margin-top: 5dvw;
+    .map{
+      width: 135.5%;
+      min-width: 135.5%;
+      height: auto;
+      margin-top: -40%;
+      margin-bottom: -35%;
+      margin-left: -17.5%;
+      /*     */
+      object-position: center;
+      object-fit: cover;
+      /* margin-left: auto;
+      margin-right: auto; */
+      overflow: hidden;
     }
+
+    /* .house{
+      margin-top: 5dvw;
+    } */
     .map-text{
       color: white;
       margin: 10% 0 18%;
@@ -1622,8 +1670,6 @@ h6 + p{
     }
     @media only screen and (max-width: 600px){
       .horizontal-media-scroller-3::after {
-        /* margin-top: 100%; */
-        /* margin-left: 40%; */
         top:90%;
         left:50%;
         transform:translate(-50%, -90%);
@@ -1829,6 +1875,10 @@ footer{
       width: 10%;
       margin-top: auto;
       margin-bottom: auto;
+     }
+     .line a img:hover{
+      position: relative;
+      color: var(--purple-text);
      }
      .footer-box{
       display: flex;
