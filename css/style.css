@@ -121,10 +121,10 @@ background-color: var(--black-gold);
 }
 @font-face {
 font-family: "kanyon";
-src: url("https://olgapotapova.github.io/sametised_kaed/foonts/Kanyon-Light.woff") format("woff");
+src: url("https://sametised-kaed.eu/foonts/Kanyon-Light.woff") format("woff");
 font-display: fallback;
-src: url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
-  format("svg"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff"), url("https://olgapotapova.github.io/sametised_kaed/foonts/kanyon/TTF/kanyon-light.ttf")
+src: url("https://sametised-kaed.eu/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.eot?#iefix") format("embedded-opentype"), url("https://sametised-kaed.eu/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.svg")
+  format("svg"), url("https://sametised-kaed.eu/foonts/kanyon/WEB/Kanyon-Light/Kanyon-Light.woff") format("woff"), url("https://sametised-kaed.eu/foonts/kanyon/TTF/kanyon-light.ttf")
   format("truetype");
   font-weight: lighter;
   font-style: normal;
