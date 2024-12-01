@@ -6,7 +6,12 @@ select.addEventListener('change', changeURLLanguage);
 
 // to url with language
 function changeURLLanguage() {
-    let lang = select.value;
+    if(select.value = undefined){
+        var lang = "ee"
+    }else{
+    var lang = select.value;
+}
+alert("lang" + lang);
     location.href = window.location.pathname + '#' + lang;
     const selectedLang = select.value;
     localStorage.setItem('selectedLang', selectedLang);
@@ -18,11 +23,9 @@ function changeURLLanguage() {
 function changeLanguage() {
     let hash = window.location.hash; 
     hash = hash.substring(1);
-    alert("hash" + hash);
     // console.log(hash);
     //Seach language from local storage
     const selectedLangLocalStorage = localStorage.getItem('selectedLang');
-    alert("selectedLangLocalStorage-2" + selectedLangLocalStorage);
     if (selectedLangLocalStorage) {
     // Set language by local storage
         select.value = selectedLangLocalStorage;
@@ -33,7 +36,6 @@ function changeLanguage() {
         location.href = window.location.pathname + '#ee';
         location.reload();
         select.value = hash;
-        alert("hash" + hash);
     }
            
     language = select.value;
