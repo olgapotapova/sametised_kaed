@@ -10,6 +10,7 @@ function changeURLLanguage() {
     location.href = window.location.pathname + '#' + lang;
     const selectedLang = select.value;
     localStorage.setItem('selectedLang', selectedLang);
+    const selectedLangLocalStorage = localStorage.getItem('selectedLang');
     alert("selectedLangLocalStorage-1" + selectedLangLocalStorage);
     location.reload();
 }
