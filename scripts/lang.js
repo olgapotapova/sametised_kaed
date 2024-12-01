@@ -19,8 +19,6 @@ const langArr = {
         "ee": "Broneeri massaaž",
         "ru": "Забронировать массаж",
     },
-
-
     "klassikaline-caption": {
         "ee": "Klassikaline massaaž",
         "ru": "Классический массаж",
@@ -86,8 +84,6 @@ const langArr = {
         "ee": "Ägedad nakkushaigused, tromboflebiit, palavik.",
         "ru": "Острые инфекционные заболевания, тромбофлебит, повышенная температура.",
     },
-
-
     "aroma-caption": {
         "ee": "Aroomimassaaž",
         "ru": "Аромамассаж",
@@ -100,8 +96,6 @@ const langArr = {
         "ee": "Allergilised reaktsioonid õlikomponentidele, rasedus.",
         "ru": "Аллергические реакции на компоненты масел, беременность (в некоторых случаях).",
     },
-
-
     "anti-cellulite-caption": {
         "ee": "Tselluliidivastane massaaž",
         "ru": "Антицеллюлитный массаж",
@@ -113,10 +107,7 @@ const langArr = {
     "anti-cellulite-contraindication": {
         "ee": "Veenilaiendid, rasedus, vähk.",
         "ru": "Варикозное расширение вен, беременность, онкологические заболевания.",
-    },
-
-
-    
+    },    
     "сupping-caption": {
         "ee": "Kupumassaaź",
         "ru": "Баночный массаж",
@@ -129,8 +120,6 @@ const langArr = {
         "ee": "Kahjustatud nahk, veenilaiendid, rasedus.",
         "ru": "Поврежденная кожа, варикозное расширение вен, беременность.",
     },
-
-
     "thai-caption": {
         "ee": "Tai massaaž",
         "ru": "Тайский массаж",
@@ -143,9 +132,6 @@ const langArr = {
         "ee": "Vigastused, herniad, osteoporoos.",
         "ru": "Травмы, грыжи, остеопороз.",
     },
-
-
-
     "lymphatic-caption": {
         "ee": "Lümfimassaaž",
         "ru": "Лимфатический массаж",
@@ -158,8 +144,6 @@ const langArr = {
         "ee": "Ägedad põletikulised protsessid, pahaloomulised kasvajad, verejooks.",
         "ru": "Острые воспалительные процессы, злокачественные опухоли, кровотечения.",
     },
-
-
     "children-caption": {
         "ee": "Laste massaaž",
         "ru": "Детский массаж",
@@ -172,9 +156,6 @@ const langArr = {
         "ee": "Tõsised tervisehäired, nahahaigused.Lastemassaaž soodustab lõõgastumist ja parandab und, arendab koordinatsiooni ja immuunsüsteemi.",
         "ru": "Противопоказания: серьезные медицинские состояния, кожные заболевания. ",
     },
-
-
-
     "lava-caption": {
         "ee": "Laavakivimassaaž",
         "ru": "Массаж камнями Лавы",
@@ -187,9 +168,6 @@ const langArr = {
         "ee": "Nahakahjustused, kõrge vererõhk.",
         "ru": "Повреждения кожи, высокое артериальное давление.",
     },
-
-
-
     "classic-facial-caption": {
         "ee": "Klassikaline näomassaaž",
         "ru": "Классический массаж лица",
@@ -202,8 +180,6 @@ const langArr = {
         "ee": "Akne ägedas staadiumis, rosaatsea, veresoonte võrgustik.",
         "ru": "Акне в стадии обострения, купероз, сосудистая сетка.",
     },
-
-
     "shiatsu-caption": {
         "ee": "Shiatsu massaaž",
         "ru": "Массаж Шиацу",
@@ -216,7 +192,6 @@ const langArr = {
         "ee": "Vigastused, artroos, vähk.",
         "ru": "Травмы, остеоартрит, онкологические заболевания.",
     },
-
     "sports-caption": {
         "ee": "Spordimassaaž",
         "ru": "Спортивный массаж",
@@ -229,8 +204,6 @@ const langArr = {
         "ee": "Värsked vigastused, osteokondroos, reumatoidartriit.",
         "ru": "Свежие травмы, остеохондроз, ревматоидный артрит.",
     },
-
-
     "segmental-caption": {
         "ee": "Segmentaalne massaaž",
         "ru": "Сегментарный массаж",
@@ -243,8 +216,6 @@ const langArr = {
         "ee": "Ägedad põletikulised protsessid, vähk.",
         "ru": "Острые воспалительные процессы, онкологические заболевания.",
     },
-
-
     "pleasure-caption": {
         "ee": "Keha nauding",
         "ru": "Удовольствие для тела",
@@ -257,7 +228,6 @@ const langArr = {
         "ee": "Allergilised reaktsioonid õlikomponentidele, rasedus.",
         "ru": "Аллергические реакции на компоненты масла, беременность.",
     },
-
     "choose-massage": {
         "ee": "Vali massaaž",
         "ru": "Выбрать массаж",
