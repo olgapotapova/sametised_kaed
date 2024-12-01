@@ -410,7 +410,7 @@ label.btn:hover {
   .mere{
     position: relative;
     z-index: 0;
-    background-image: url(https://olgapotapova.github.io/sametised_kaed/images/Mere-with-lungs.png);
+    background-image: url(https://sametised-kaed.eu/images/Mere-with-lungs.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -11.5dvw; 
@@ -427,7 +427,7 @@ label.btn:hover {
   }
   @media only screen and (max-width: 1200px) {
     .mere {
-      background-image: url(https://olgapotapova.github.io/sametised_kaed/images/Mere.png);
+      background-image: url(https://sametised-kaed.eu/images/Mere.png);
       background-position: top;
       min-height: 50dvw;
       height: 50dvw;
@@ -1226,7 +1226,7 @@ h6 + p{
 }
 .slider-box-2 section::before{
   content: "";
-  background-image: url(https://olgapotapova.github.io/sametised_kaed//images/Patern1.svg);
+  background-image: url(https://sametised-kaed.eu/images/Patern1.svg);
   position: absolute;
   margin-top: -19%;
   width: 30dvw;
@@ -1238,7 +1238,7 @@ h6 + p{
 }
 .slider-box-2 section::after{
   content: "";
-  background-image: url(https://olgapotapova.github.io/sametised_kaed//images/Patern2.svg);
+  background-image: url(https://sametised-kaed.eu/images/Patern2.svg);
   position: absolute;
   margin-top: 50%;
   margin-right: 3%;
@@ -1903,7 +1903,7 @@ footer{
      @media only screen and (max-width: 600px) { 
       .mobile-pattern-top, .mobile-pattern{
         display: block;
-        content: url(https://olgapotapova.github.io/sametised_kaed/images/Mobile-pattern.svg);
+        content: url(https://sametised-kaed.eu/images/Mobile-pattern.svg);
         width: 60%;
         margin-left: auto;
         margin-right: auto;
