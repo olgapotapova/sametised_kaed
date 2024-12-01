@@ -10,6 +10,7 @@ function changeURLLanguage() {
     location.href = window.location.pathname + '#' + lang;
     const selectedLang = select.value;
     localStorage.setItem('selectedLang', selectedLang);
+    alert("selectedLangLocalStorage-1" + selectedLangLocalStorage);
     location.reload();
 }
 
@@ -20,7 +21,7 @@ function changeLanguage() {
     // console.log(hash);
     //Seach language from local storage
     const selectedLangLocalStorage = localStorage.getItem('selectedLang');
-    alert("selectedLangLocalStorage" + selectedLangLocalStorage);
+    alert("selectedLangLocalStorage-2" + selectedLangLocalStorage);
     if (selectedLangLocalStorage) {
     // Set language by local storage
         select.value = selectedLangLocalStorage;
