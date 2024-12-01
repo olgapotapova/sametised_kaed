@@ -14,9 +14,9 @@ function changeURLLanguage() {
 }
 
 function changeLanguage() {
-    let hash = window.location.hash;
-    alert("hash" + hash);
+    let hash = window.location.hash; 
     hash = hash.substring(1);
+    alert("hash" + hash);
     // console.log(hash);
     //Seach language from local storage
     const selectedLangLocalStorage = localStorage.getItem('selectedLang');
@@ -26,10 +26,12 @@ function changeLanguage() {
         select.value = selectedLangLocalStorage;
         location.href = window.location.pathname + '#' + selectedLangLocalStorage;
 
-    }else if (!allLang.includes(hash)) {
+    // }else if (!allLang.includes(hash)) {
+    }else{
         location.href = window.location.pathname + '#ee';
         location.reload();
         select.value = hash;
+        alert("hash" + hash);
     }
            
     language = select.value;
