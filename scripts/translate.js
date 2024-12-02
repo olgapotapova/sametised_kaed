@@ -12,9 +12,15 @@ function changeURLLanguage() {
 //     var lang = select.value;
 // };
 var lang = select.value;
-alert("lang" + lang);
-    // location.href = window.location.pathname + '#' + lang;
+if (((navigator.userAgent.toLowerCase().indexOf('mozilla/5.0') > -1 && navigator.userAgent.toLowerCase().indexOf('android ') > -1 && navigator.userAgent.toLowerCase().indexOf('applewebkit') > -1) && !(navigator.userAgent.toLowerCase().indexOf('chrome') > -1))) {
+    window.history.replaceState({}, document.title, base + fragment);
+    window.location.replaceState({}, "Sametised kaed", "https://sametised-kaed.eu/" + '#' + lang)
+} else {
+    // location.replace(base + fragment);
     location.href = window.location.hash + '#' + lang;
+}
+    // location.href = window.location.pathname + '#' + lang;
+    // location.href = window.location.hash + '#' + lang;
     const selectedLang = select.value;
     localStorage.setItem('selectedLang', selectedLang);
     const selectedLangLocalStorage = localStorage.getItem('selectedLang');
