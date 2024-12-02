@@ -37,6 +37,7 @@ function changeLanguage() {
     //     var hash = window.location.hash; 
     //     hash = hash.substring(1);
     // }
+    // https://sametised-kaed.eu/?fbclid=PAZXh0bgNhZW0CMTEAAaahlzxL6LWnQth7wJlUEnjKKXmvqQ5C9goX5wzFt1D6KvrQVMzHDAZ3-Io_aem_kNmOTR5GaL1Hj4fA6SD1eQ
     let hash = window.location.hash; 
     // let hash = window.location.href; 
     // alert("hash" + hash);
