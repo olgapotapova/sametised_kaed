@@ -13,7 +13,7 @@ function changeURLLanguage() {
 // };
 var lang = select.value;
 if (((navigator.userAgent.toLowerCase().indexOf('mozilla/5.0') > -1 && navigator.userAgent.toLowerCase().indexOf('android ') > -1 && navigator.userAgent.toLowerCase().indexOf('applewebkit') > -1) && !(navigator.userAgent.toLowerCase().indexOf('chrome') > -1))) {
-    window.history.replaceState({}, document.title, base + fragment);
+    // window.history.replaceState({}, document.title, base + fragment);
     window.location.replaceState({}, "Sametised kaed", "https://sametised-kaed.eu/" + '#' + lang)
 } else {
     // location.replace(base + fragment);
@@ -29,8 +29,16 @@ if (((navigator.userAgent.toLowerCase().indexOf('mozilla/5.0') > -1 && navigator
 }
 
 function changeLanguage() {
-    let hash = window.location.hash; 
-    hash = hash.substring(1);
+    if (((navigator.userAgent.toLowerCase().indexOf('mozilla/5.0') > -1 && navigator.userAgent.toLowerCase().indexOf('android ') > -1 && navigator.userAgent.toLowerCase().indexOf('applewebkit') > -1) && !(navigator.userAgent.toLowerCase().indexOf('chrome') > -1))) {
+        window.history.replaceState({}, document.title, base + fragment);
+        window.location.replaceState({}, "Sametised kaed", "https://sametised-kaed.eu/")
+    } else {
+        // location.replace(base + fragment);
+        var hash = window.location.hash; 
+        hash = hash.substring(1);
+    }
+    // let hash = window.location.hash; 
+    // hash = hash.substring(1);
     alert("hash" + hash);
     // console.log(hash);
     //Seach language from local storage
