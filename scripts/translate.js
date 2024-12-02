@@ -13,7 +13,8 @@ function changeURLLanguage() {
 // };
 var lang = select.value;
 alert("lang" + lang);
-    location.href = window.location.pathname + '#' + lang;
+    // location.href = window.location.pathname + '#' + lang;
+    location.href = window.location.hash + '#' + lang;
     const selectedLang = select.value;
     localStorage.setItem('selectedLang', selectedLang);
     const selectedLangLocalStorage = localStorage.getItem('selectedLang');
