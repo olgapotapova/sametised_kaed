@@ -38,10 +38,11 @@ function changeLanguage() {
     //     hash = hash.substring(1);
     // }
     // https://sametised-kaed.eu/?fbclid=PAZXh0bgNhZW0CMTEAAaahlzxL6LWnQth7wJlUEnjKKXmvqQ5C9goX5wzFt1D6KvrQVMzHDAZ3-Io_aem_kNmOTR5GaL1Hj4fA6SD1eQ
-    if(window.location.href.includes == "?fbclid"){
-        window.history.replaceState({}, "Sametised kaed", "https://sametised-kaed.eu/" + "#ee"
-        )
-    };
+    // if(window.location.href.includes == "?fbclid"){
+    //     window.history.replaceState({}, "Sametised kaed", "https://sametised-kaed.eu/" + "#ee"
+    //     )
+    // };
+    window.history.replaceState({}, "Sametised kaed", "https://sametised-kaed.eu/" + "#ee");
     let hash = window.location.hash; 
     // let hash = window.location.href; 
     // alert("hash" + hash);
@@ -56,12 +57,13 @@ function changeLanguage() {
         location.href = window.location.pathname + '#' + selectedLangLocalStorage;
 
     // }else if (!allLang.includes(hash)) {
-    }else{
-        // location.href = window.location.pathname + '#ee';
-        location.href = window.location.href + '#ee';
-        location.reload();
-        select.value = hash;
     }
+    // else{
+    //        location.href = window.location.pathname + '#ee';
+    //     location.href = window.location.href + '#ee';
+    //     location.reload();
+    //     select.value = hash;
+    // }
            
     language = select.value;
     document.querySelector('title').innerHTML = langArr['sametised'][language];
